@@ -1,0 +1,24 @@
+.container{
+  display: grid;
+  grid-template-areas:
+  'menu toolbar toolbar toolbar'
+  'menu main main main'
+  'menu body body body';
+}
+.toolbar{
+  grid-area: toolbar;
+  background-color: rgb(87, 87, 199);
+}
+.menu{
+  grid-area: menu;
+  background-color: rgb(145, 145, 218);
+}
+.main{
+  grid-area: main;
+  background-color: rgb(204, 204, 240);
+}
+.form{
+  grid-area: body;
+  background-color: rgb(204, 204, 240);
+
+}

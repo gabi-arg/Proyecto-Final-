@@ -1,0 +1,26 @@
+
+<h2>Ingresa un Nuevo Estudiante</h2>
+
+<form  [formGroup]="formularioInscripcion" >
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre</label>
+    <input formControlName="nombre" type="text" class="form-control" id="name">
+  </div>
+  <div class="mb-3">
+    <label for="lastname" class="form-label">Apellido</label>
+    <input formControlName="apellido" type="text" class="form-control" id="lastname">
+  </div>
+  <div class="mb-3">
+    <label for="cursosRealizados" class="form-label">Cursos Realizados</label>
+    <input formControlName="cursosRealizados" type="text" class="form-control" id="cursosRealizados">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="login">Submit</button>
+  </form>
+
+
